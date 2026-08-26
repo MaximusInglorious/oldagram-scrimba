@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-container {
+    background-color: #fff;
+    max-width: 375px;
+}
+
+header {
+    /* background-color: #fff; */
+    /* max-width: 375px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+#site-logo {
+    height: 34px;
+    /* width: 128px;  */
+}
+
+.avatar-img {
+    height: 34px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+main {
+    background-color: #ededed;
+    /* max-width: 375px; */
+    font-family: "Source Sans 3", sans-serif;
+    font-size: calc(13rem / 16);
+}
+
+#posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.post-item {
+    background-color: #fff;
+}
+
+.post-header {
+    padding: 0.625rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.user-location {
+    font-size: calc(12rem / 16);
+}
+
+.post-img {
+    /* max-width: */
+    position: relative;
+    overflow: hidden;
+}
+
+.post-img img {
+    /* object-fit: contain; */
+    max-width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    opacity: 0;
+    transition: 0.5s opacity ease, display 0.5s ease allow-discrete;
+}
+
+.is-visible {
+    opacity: 1;
+    display: block;
+}
+
+@starting-style {
+    .is-visible {
+        opacity: 0;
+    }
+}
+
+.overlay img {
+    padding: 8rem;
+}
+
+.post-body {
+    padding: 1rem;
+}
+
+.post-buttons {
+    height: 1.75rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.post-button {
+    background: none;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.2s opacity ease;
+}
+
+.post-button:hover {
+    opacity: 0.5;
+}
+
+.post-button img {
+    max-height: 100%; 
+}
+
+.like-count {
+    margin: 0.75rem 0;
+    font-weight: bold;
+}

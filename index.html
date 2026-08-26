@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Oldagram</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Fonts [Google Fonts] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <img id="site-logo" src="./assets/figma/oldagram-logo.png" alt="Oldagram logo"/>
+        <img id="this-user-avatar" class="avatar-img" src="./assets/user-avatar.png" alt="your avatar"/>
+      </header>
+      <main>
+        <section id="posts-container">
+          <div class="post-item">
+            <div class="post-header">
+              <img class="avatar-img" src="./assets/avatar-vangogh.jpg" alt="poster's avatar"/>
+              <div>
+                <b><p>Vincent Van Gogh</p></b>
+                <p class="user-location">Zudert, Netherlands</p>
+              </div>
+            </div>
+            <div class="post-img">
+              <img src="./assets/post-vangogh.jpg"/>
+              <div class="overlay">
+                <img src="./assets/filled-heart-big.png" alt="liked heart symbol"/>
+              </div>
+            </div>
+            <div class="post-body">
+              <div class="post-buttons">
+                <button class="post-button like-button"><img src="./assets/icon-heart.png" alt="like button"></button>
+                <button class="post-button"><img src="./assets/icon-comment.png" alt="comment button"></button>
+                <button class="post-button"><img src="./assets/icon-dm.png" alt="share button"/></button>
+              </div>
+              <p class="like-count">21,492 likes</p>
+              <p class="comment"><b>vincey1853</b> just took a few mushrooms lol</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
